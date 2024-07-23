@@ -432,12 +432,10 @@ a:hover {
 
   @media only screen and (max-width: 480px) {
     .banner {
-      background-image: linear-gradient(rgb(10 9 7 / 90%), rgb(249 179 18 / 81%)), url('../../images/banner_cover3.jpg');
     }
   }
   @media only screen and (max-width: 768px) {
     .banner {
-      background-image: linear-gradient(rgb(10 9 7 / 90%), rgb(249 179 18 / 81%)), url('../../images/banner_cover3.jpg');
     }
   }
 
