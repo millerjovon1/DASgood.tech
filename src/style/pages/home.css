@@ -34,12 +34,28 @@ body {
 /* ===Variables==== */
 
 .border-bottom{
+  width: 100%;
   border-bottom: 1px solid white;
 
 }
 
 .border-top{
+  width: 100%;
   border-top: 1px solid white;
+}
+
+.m-none{
+  margin: 0px;
+}
+
+.p-none{
+  padding: 0px;
+}
+.m-top{
+  margin-top: 20px;
+}
+.m-bottom{
+  margin-top: 12px;
 }
 
 /* == Buttons == */
@@ -401,7 +417,7 @@ a:hover {
 
 .google-translate-widget {
   position: absolute;
-  left: 26%;
+  left: 60%;
   top: 0%;
 
   width: 120px; /* Adjust width as needed */
@@ -424,11 +440,36 @@ a:hover {
 
 
 /* ===Banner/Header=== */
+.banner-wrapper{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+}
+@media only screen and (max-width: 768px) {
+  .banner-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .banner-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
+
 
   .banner {
     max-width: 1200px;
     height: auto; /* Adjusted to auto for responsiveness */
-    padding: 15% 0; /* Adjusted padding for responsiveness */
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
@@ -437,22 +478,7 @@ a:hover {
   }
 
 
-  @media only screen and (max-width: 480px) {
-    .banner {
-    }
-  }
-  @media only screen and (max-width: 768px) {
-    .banner {
-    }
-  }
 
-  .banner-wrapper{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row-reverse;
-  }
 
 
   .cs-contact-form {
@@ -463,20 +489,22 @@ a:hover {
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
+  text-align: center;
   }
 
   @media only screen and (max-width: 480px) {
     .cs-contact-form {
-      max-width: 360px;
+      max-width: 300px;
       width: 100%; /* Set width to 100% for full width */
-      margin: 0px;
+      margin-top: 12px ;
     }
   }
   @media only screen and (max-width: 768px) {
     .cs-contact-form {
-      width: 360px; /* Set width to 100% for full width */
+      width: 300px; /* Set width to 100% for full width */
       width: 100%;
-      margin: 0px;
+      margin-top: 12px ;
+
     }
   }
 
@@ -553,13 +581,13 @@ a:hover {
   /* box-shadow: 0 10px 30px rgba(0,0,0,.1);    Light shadow */
 }
 @media only screen and (max-width: 768px) {
-  .dgm-imt{
+  .dgt-img{
     max-width: 320px;
     width: 100%;
   }
 }
 @media only screen and (max-width: 480px) {
-  .dgm-imt{
+  .dgt-img{
     max-width: 320px;
     width: 100%;
   }
@@ -599,6 +627,15 @@ a:hover {
   text-align: center;
 
 }
+@media only screen and (max-width: 768px) {
+
+  .main-container-home{
+    margin: 0px;
+    width: 100%;
+    /* Center the container horizontally */
+    text-align: center;
+
+  }
 @media only screen and (max-width: 480px) {
 
   .main-container-home{
@@ -610,13 +647,41 @@ a:hover {
   }
 }
 
+}
+
 .one-by-two-section-wrapper{
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
   color: white;
+  margin-top: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .one-by-two-section-wrapper{
+    max-width: 320px;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 20px;
+
+  }
+@media only screen and (max-width: 480px) {
+
+  .one-by-two-section-wrapper{
+    max-width: 320px;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 20px;
+
+
+  }
+}
+}
+
 .right-card{
   max-width: 360px;
   width: 100%;
@@ -650,22 +715,46 @@ a:hover {
   border-radius: 12px;
 }
 
+@media only screen and (max-width: 768px) {
+
+  .card-img{
+    max-width: 300px;
+    width: 100%;
+    flex-direction: column;
+
+
+  }
+@media only screen and (max-width: 480px) {
+
+  .card-img{
+    max-width: 300px;
+    width: 100%;
+    flex-direction: column;
+
+  }
+}
+}
+
 .owner-profile{
-  max-width: 400px;
-  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-evenly;
+  align-items: center;
   border: 1px solid white;
   border-radius: 8px;
-
+  max-width: 400px;
+  width: 100%;
   margin-bottom: 4%;
 }
 
 .owner-avatar{
-  max-width: 100px;
+  max-width: 80px;
   width: 100%;
   border-radius: 50%;
+}
+.owner-bio{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 
