@@ -1,0 +1,40 @@
+
+
+
+/* ==Variables== */
+.bg-red{
+  background-color: red;
+  border-radius: 4px;
+}
+
+.pricing-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.pricing{
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.package-details{
+
+  border: 2px solid red;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.package-detials, ul{
+  text-align: left;
+  list-style-type: none;
+}
